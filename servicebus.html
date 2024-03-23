@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .image img{
+            height:25%;
+            width:100%;
+            position: absolute;
+            top:30%;
+            left:1px;
+        }
+        .first h2{
+            top:60%;
+        }
+        .first p{
+            top:65%;
+        }
+        .second p{
+            top:73%;
+        }
+        .third p{
+            top:85%;
+        }
+        .fourth h2{
+            top:97%;
+        }
+        .fourth p{
+            top:102%;
+        }
+        a{
+            text-decoration: none;
+        }
+        .fifth h2{
+            top:111%;
+        }
+        .fifth p{
+            top:116%;
+        }
+        .sixth h2{
+            top:123%;
+        }
+        .sixth p{
+            top:128%;
+        }
+        .seventh h2{
+            top:132%;
+        }
+        .seventh p{
+            top:137%;
+        }
+        .list{
+            top:140%;
+        }
+        h1{
+            top:150%;
+            color:rgb(62,62,162);
+            margin-top: 100px;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            min-height:150%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1270px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .footer {
+            background-color: #2691d9;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            width: 22%;
+            padding: 0 15px;
+            color: white;
+        }
+        .footer-col1 h4, .footer-col2 h4, .footer-col3 h4, .footer-col4 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        .footer-col2, .footer-col3, .footer-col4 {
+            line-height: 1.8;
+            color: white;
+            
+        }
+        .footer-col2 {
+            padding-left: 30px;
+        }
+        .footer-col2 ul li a{
+            text-decoration: none;
+        }
+        .footer-col3 ul li a{
+            text-decoration: none;
+        }
+        .footer-col4 ul li a{
+            text-decoration: none;
+        }
+        .footer-col2 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col3 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 .font-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: white;
+        }
+        .last {
+            padding-left: 450px;
+            padding-top: 30px;
+        }
+        .container1 p{
+            font:15px Lato,sans-serif;
+            position:absolute;
+            top:1%;
+            left:5%;
+            color:#ffff;
+        }
+        .container1 span{
+            border:6px #0B388D solid;
+            border-radius: 5%;
+            background-color: #0B388D;
+            color: #0B388D;
+        }
+        .navbar1{
+            border: 22px #2691d9 solid;
+        }
+        .agent{
+            color: white;
+            position:absolute;
+            top:2%;
+            right:7%;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        .image4{
+            height:15%;
+            width:15%;
+            position:absolute;
+            top:10%;
+        }
+        .navbar-list{
+            position:absolute;
+            top:18%;
+            right:10%;
+            display: flex;
+        }
+        .home{
+            position:absolute;
+            right:1680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .manage{
+            position:absolute;
+            right:1300%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .service{
+            position:absolute;
+            right:1000%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .gallery{
+            position: absolute;
+            right:680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .about{
+            position: absolute;
+            right: 400%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .contact{
+            position:absolute;
+            right:40%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .navbar-list  a:hover{
+            color:#9FD542;
+            transition: all  0.5s;
+            cursor: pointer;
+        }
+        .content {
+            padding-left: 250px;
+            margin-top: 400px;
+        }
+        @media only screen and (max-width: 768px) {
+            .contact {
+                right: 0%;
+                font-size: 16px;
+            }
+            .about {
+                right: 250%;
+                font-size: 16px;
+            }
+            .gallery {
+                right: 470%;
+                font-size: 16px;
+            }
+            .service {
+                right: 700%;
+                font-size: 16px;
+            }
+            .manage {
+                right: 950%;
+                font-size: 16px;
+            }
+            .home {
+                right: 1200%;
+                font-size: 16px;
+            }
+            .wish {
+                padding-top: 30px;
+                padding-left: 0px;
+                padding-right: 20px;
+            }
+            .content {
+                padding-left: 10px;
+            }
+            .footer {
+                padding-top: 100px;
+            }
+            .last {
+                padding-left: 170px;
+            }
+
+        }
+        @media only screen and (max-width: 1024px) {
+            .content {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="container1">
+            <p><i id="email" class="fa-solid fa-envelope"></i>venkateswara12@gmail.com </p>
+            <a class="agent" href="agent2.html">Agent Login</a>
+            <img class="image4" src="logo.jpeg"/>
+            <ul class="navbar-list">
+                <li><a class="home" href="hamebus.html">Home</a></li>
+                <li><a class="manage" href="book.html">Bookings</a></li>
+                <li><a class="service" href="servicebus.html">Service</a></li>
+                <li><a class="gallery" href="gallerybus.html">Gallery</a></li>
+                <li><a class="about" href="navbarbus.html">About</a></li>
+                <li><a class="contact" href="contaactbus.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="image"> 
+        <img src="balaji.jpg"/>
+        <!-- <h2>SERVICES</h2> -->
+    </div>
+    <div class = "content">
+    <div class="first">
+    <h2>Sri venkateswara Travels Online Bus Ticket Booking</h2>
+    <p>Sri venkateswara Travels Idea arose from the need for simple solutions to travel. Buses are India's most commonly used form of travel, the<br> fleet of Kaveri travels include Multi-axle Volvo, Sleeper and Semi-Sleeper buses in the A/C and Non-A/C Category as well.</p>
+    </div>
+    <div class="second">
+        <p>Sri ventakeswara travels buses operate on all the major routes in numerous states including Andhra Pradesh, Telangana , Kerala, Tamil<br> Nadu and Karnataka. Sri venkateswara Travels maintains a good reputation with their punctuality, staff behaviour, and hygiene. Some<br> important routes provided by sri venkateswara Travels operators include Hyderabad to Chennai, Bangalore to Chennai, Hyderabad to<br> Pune, Visakhapatnam to Vijayawada, Hyderabad to Visakhapatnam, and  Bangalore to Hyderabad,to name a few!</p>
+    </div>
+    <div class="third">
+        <p>Sri venkateswara Travels Online ticket booking for the bus can be done on abhibus.com by using online payment methods (Credit<br> Cards, Debit Cards or Net banking). Customers can carry their Mobile Ticket (SMS confirmation) that they receive from<br> abhibus.com after their booking. Customers can call abhibus.com's 24/7 Customer Support for any queries that they have. All<br> transactions on abhibus.com are safe and secure (encrypted using VeriSign SSL Security). Abhibus customers also have the<br> option of tracking the Sri venkateswara Travels bus online.</p>
+    </div>
+    <div class="fourth">
+        <h2>Book Sri venkateswara Travels Online Bus Tickets</h2>
+        <p>Booking Sri venkateswara Travels bus tickets online is fairly simple with the Abhibus App because of its user-friendly design and step-by-<br>step flow. Users are provided with complete information about Sri venkateswara Travels bus timings; start time and the time of arrival,<br> boarding points and drop points in all of the major cities including the city of Hyderabad,  Chennai, Visakhapatnam, Bangalore<br> and Vijayawada. Additionally, Abhibus provides Sri venkateswara Travels <a href="#">bus ticket offers</a> and discounts making it an affordable trip.</p>
+    </div>
+    <div class="fifth">
+        <h2>Sri venkateswara Travels Bus Tracking</h2>
+        <p>Sri venkateswara Travels buses provide tracking facilities for their customers. With the Kaveri Travels live tracking option, users can track<br> the live location of the bus along the route, while travelling. Tracking features in the Abhibus app help plan a user’s bus boarding<br> and tracking.</p>
+    </div>
+    <div class="sixth">
+        <h2>Sri venkateswara Travels Bus Timings</h2>
+        <p>Sri venkateswara Travels buses start from 13:00 Hrs to till 23:30 hrs depending on the destinations from various places across the country.</p>
+    </div>
+    <div class="seventh">
+        <h2>Sri venkateswara Travels Pilgrimage Destinations</h2>
+        <p>Here is a list of some popular pilgrimage destinations.</p>
+    </div>
+    <ul class="list">
+        <li>Bhadrachalam</li>
+        <li>Tirupati</li>
+        <li>Madurai</li>
+        <li>Annavaram</li>
+        <li>vijyawada</li>
+        <li>Srisailam</li>
+        <li>Srikalahasti</li>
+        <li>Kanchipuram</li>
+        <li>Mantralayam</li>
+    </ul>
+    </div>
+    <center><h1 class = "wish"><font color = "blue">Wish you a Happy and Comfortable Journey</font></h1></center>
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "row">
+                <div class = "footer-col1">
+                    <h4><font color = "black">CONTACT</font></h4>
+                    <h3><i class="fa-solid fa-location-dot"></i> :  SRI VENKATESWARA <br> TRAVELS</h3>
+                    <p>
+                        2-88, KORLAGUDEM, KALLURU,<br>
+                        KHAMMAM, Khammam,<br>
+                        Telangana-507209<br><br>
+                        <i class="fa-solid fa-phone"></i> : 8179574959<br>
+                        <i class="fa-solid fa-envelope"></i> : srivenkateswaratravels.spl@gmail.com
+                    </p>
+                </div>
+                <div class = "footer-col2">
+                    <h4><font color = "black">QUICK LINKS</font></h4>
+                    <ul>
+                        <li><a href = "shedule.html"><font color = "white">Shedules</font></a></li>
+                        <li><a href = "refund.html"><font color = "white">Refund Status</font></a></li>
+                        <li><a href = "agentregister.html"><font color = "white">Agent Registration</font></a></li>
+                        <li><a href = "policy.html"><font color = "white">Privacy Policy</font></a></li>
+                        <li><a href = "faqs.html"><font color = "white">FAQS</font></a></li>
+                        <li><a href = "feedback12.html"><font color = "white">Feedback</font></a></li>
+                    </ul>
+                </div>
+                <div class = "footer-col3">
+                <h4><font color = "black">QUICK LINKS</font></h4>
+                    <ul>
+                        <li><a href = "t&c12.html"><font color = "white">Terms & Conditions</font></a></li>
+                        <li><a href = "cpb.html"><font color = "white">Confirm Phone Booking</font></a></li>
+                        <li><a href = "contaactbus.html"><font color = "white">Contact</font></a></li>
+                        <li><a href = "gallerybus.html"><font color = "white">Gallery</font></a></li>
+                        <li><a href = "navbarbus.html"><font color = "white">About Us</font></a></li>
+                        <li><a href = "agent2.html"><font color = "white">Agent Login</font></a></li>
+                    </ul>
+                    
+                </div>
+                <div class = "footer-col4">
+                    <h4><font color = "black">FOLLOW US</font></h4>
+                    <div class = "font-links">
+                        <a href = ""><font color = "white"><i class="fa-brands fa-facebook"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-twitter"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-youtube"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-linkedin"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-instagram"></i></font></a>
+                    </div>
+                    
+                </div>
+                <div class = "last">
+                    <center><h4>2023 All rights reserved.<font color ="red"> SRI VENKATESWARA TRAVELS</font></h4></center>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

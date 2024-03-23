@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .container1 p{
+            font:15px Lato,sans-serif;
+            position:absolute;
+            top:1%;
+            left:5%;
+            color:#ffff;
+        }
+        .container1 span{
+            border:6px #0B388D solid;
+            border-radius: 5%;
+            background-color: #0B388D;
+            color: #0B388D;
+        }
+        .navbar1{
+            border: 22px #2691d9 solid;
+        }
+        .agent{
+            color: white;
+            position:absolute;
+            top:2%;
+            right:7%;
+            background-color: #2691d9;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        .image4{
+            height:15%;
+            width:15%;
+            position:absolute;
+            top:10%;
+        }
+        .navbar-list{
+            position:absolute;
+            top:18%;
+            right:10%;
+            display: flex;
+        }
+        .home{
+            position:absolute;
+            right:1680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .manage{
+            position:absolute;
+            right:1300%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .service{
+            position:absolute;
+            right:1000%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .gallery{
+            position: absolute;
+            right:680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .about{
+            position: absolute;
+            right: 400%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .contact{
+            position:absolute;
+            right:40%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .navbar-list  a:hover{
+            color:#9FD542;
+            transition: all  0.5s;
+            cursor: pointer;
+        }
+        .img{
+            width: 100%;
+            height: 250px;
+            padding-top: 175px;
+        }
+        .para1, .para2, .para3, .para4, .para5, .para6 {
+            padding-left: 250px;
+        }
+        .wish {
+            color: blue;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .footer {
+            background-color: #2691d9;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            width: 22%;
+            padding: 0 15px;
+            color: white;
+        }
+        .footer-col1 h4, .footer-col2 h4, .footer-col3 h4, .footer-col4 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        .footer-col2, .footer-col3, .footer-col4 {
+            line-height: 1.8;
+            color: white;
+            
+        }
+        .footer-col2 {
+            padding-left: 30px;
+        }
+        .footer-col2 ul li a{
+            text-decoration: none;
+        }
+        .footer-col3 ul li a{
+            text-decoration: none;
+        }
+        .footer-col4 ul li a{
+            text-decoration: none;
+        }
+        .footer-col2 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col3 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 .font-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: white;
+        }
+        .last {
+            padding-left: 450px;
+            padding-top: 30px;
+        }
+        @media only screen and (max-width: 768px) {
+            .total {
+                width: 100%;
+            }
+            .contact {
+                right: 0%;
+                font-size: 16px;
+            }
+            .about {
+                right: 250%;
+                font-size: 16px;
+            }
+            .gallery {
+                right: 470%;
+                font-size: 16px;
+            }
+            .service {
+                right: 700%;
+                font-size: 16px;
+            }
+            .manage {
+                right: 950%;
+                font-size: 16px;
+            }
+            .home {
+                right: 1200%;
+                font-size: 16px;
+            }
+            .para1, .para2, .para3, .para4, .para5, .para6 {
+                padding-left: 5px;
+                font-size: 12px;
+            }
+            .last {
+                padding-left: 170px;
+            }
+
+        }
+        @media only screen and (max-width: 1024px) {
+            .para1, .para2, .para3, .para4, .para5, .para6 {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "total">
+    <nav class="navbar1">
+        <div class="container1">
+            <p><i id="email" class="fa-solid fa-envelope"></i>venkateswara12@gmail.com </p>
+            <a class="agent" href="agent2.html">Agent Login</a>
+            <img class="image4" src="logo.jpeg"/>
+            <ul class="navbar-list">
+                <li><a class="home" href="hamebus.html">Home</a></li>
+                <li><a class="manage" href="book.html">Bookings</a></li>
+                <li><a class="service" href="servicebus.html">Service</a></li>
+                <li><a class="gallery" href="gallerybus.html">Gallery</a></li>
+                <li><a class="about" href="navbarbus.html">About</a></li>
+                <li><a class="contact" href="contaactbus.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img src = "balaji.jpg" class = "img">
+    <br><br><br><br>
+    <div class = "para1">
+        <p>
+            Sri Venkateswara Travels is a renowned brand in the bus operating industry. Our vision is to give a new face to the bus industry. Since our inception<br>
+            passenger comfort was our top priority. We have frequently added luxury buses to our huge fleet of buses. The only thing we focus on is that the comfort<br> 
+            quotient of our passengers should never be compromised. We have always tried our best to push our limits in order to develop our travel experience.<br> 
+            Read further to understand what we offer that enhances our reputation in the market.
+        </p>
+    </div>
+    <div class = "para2">
+       <h2>Live Bus Tracking</h2>
+       <p>
+        We have integrated this great technology of live bus tracking in almost all of our buses. This helps the passengers to be informed about the live position of<br>
+        the bus, thus helping them in planning their commute to the bus stand. It also prevents the unwanted stress of missing or waiting for the bus in case of<br>
+        delays.
+       </p>
+    </div>
+    <div class = "para3">
+        <h2>Our Customer Support</h2>
+        <p>
+            To render the best service we strive to provide the best customer support. We have an attentive customer support team to which the passengers can<br>
+            report any issues regarding the journey. This team addresses all the issues of the passengers and comes out with a solution in the shortest possible time.<br>
+            This creates a warm feeling in the customers thus pushing them to be our regular customers.
+        </p>
+    </div>
+    <div class = "para4">
+        <h2>Great Comfort</h2>
+        <p>
+            Now, once a passenger boards the bus he will be surprised by the inner comfort of the bus. The buses have all the latest amenities like WiFi, charging<br>
+            point, water bottle and central TV. The seats are really very comfortable and create a feeling of a cosy bedroom. We have almost all the luxury brand<br>
+            buses in our fleet. Our luxurious fleet includes Mercedes Benz Multi-axle buses, Volvo Multi-axle buses, and Scania Multi-axle comfort buses. These<br>
+            buses help in smoothening the journey. Our motto to change the perception of bus travel makes us enhance our luxury levels regularly.
+        </p>
+    </div>
+    <div class = "para5">
+        <h2>Safety</h2>
+        <p>
+            Safety is one of the most important criteria we look for while planning a bus route. We have the best drivers who completely understand the importance<br>
+            of safety and follow all the safety rules.
+        </p>
+    </div>
+    <div class = "para6">
+        <h2>Regular Offers</h2>
+        <p>
+            We at Sri Venkateswara Travels strive to maintain the most reasonable rates in the market. This also makes our passengers happy and thus we further give<br>
+            them discount offers on a regular basis to enhance their happiness.
+        </p>
+    </div>
+    <br><br><br><br>
+    <div class = "wish">
+        <center><h1>Wish you a Happy and Comfortable Journey</h1></center>
+        </div>
+        <footer class = "footer">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "footer-col1">
+                        <h4><font color = "black">CONTACT</font></h4>
+                        <h3><i class="fa-solid fa-location-dot"></i> :  SRI VENKATESWARA <br> TRAVELS</h3>
+                        <p>
+                            2-88, KORLAGUDEM, KALLURU,<br>
+                            KHAMMAM, Khammam,<br>
+                            Telangana-507209<br><br>
+                            <i class="fa-solid fa-phone"></i> : 8179574959<br>
+                            <i class="fa-solid fa-envelope"></i> : srivenkateswaratravels.spl@gmail.com
+                        </p>
+                    </div>
+                    <div class = "footer-col2">
+                        <h4><font color = "black">QUICK LINKS</font></h4>
+                        <ul>
+                            <li><a href = "shedule.html"><font color = "white">Shedules</font></a></li>
+                            <li><a href = "refund.html"><font color = "white">Refund Status</font></a></li>
+                            <li><a href = "agentregister.html"><font color = "white">Agent Registration</font></a></li>
+                            <li><a href = "policy.html"><font color = "white">Privacy Policy</font></a></li>
+                            <li><a href = "faqs.html"><font color = "white">FAQS</font></a></li>
+                            <li><a href = "feedback12.html"><font color = "white">Feedback</font></a></li>
+                        </ul>
+                    </div>
+                    <div class = "footer-col3">
+                    <h4><font color = "black">QUICK LINKS</font></h4>
+                        <ul>
+                            <li><a href = "t&c12.html"><font color = "white">Terms & Conditions</font></a></li>
+                            <li><a href = "cpb.html"><font color = "white">Confirm Phone Booking</font></a></li>
+                            <li><a href = "contaactbus.html"><font color = "white">Contact</font></a></li>
+                            <li><a href = "gallerybus.html"><font color = "white">Gallery</font></a></li>
+                            <li><a href = "navbarbus.html"><font color = "white">About Us</font></a></li>
+                            <li><a href = "agent2.html"><font color = "white">Agent Login</font></a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class = "footer-col4">
+                        <h4><font color = "black">FOLLOW US</font></h4>
+                        <div class = "font-links">
+                            <a href = ""><font color = "white"><i class="fa-brands fa-facebook"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-twitter"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-youtube"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-linkedin"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-instagram"></i></font></a>
+                        </div>
+                        
+                    </div>
+                    <div class = "last">
+                        <center><h4>2023 All rights reserved.<font color ="red"> SRI VENKATESWARA TRAVELS</font></h4></center>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+</body>
+</html>

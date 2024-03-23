@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .image img{
+            height:25%;
+            width:100%;
+            position: absolute;
+            top:30%;
+            left:1px;
+        }
+        .image h2{
+            color:rgb(62,62,162);
+            font-size:30px ;
+            position:absolute;
+            top:40%;
+            left:40%;
+        }
+        .h6{
+            position: absolute;
+            font-size:34px ;
+            top:160%;
+            left:25%;
+            color: blue;
+        }
+        .container1 p{
+            font:15px Lato,sans-serif;
+            position:absolute;
+            top:1%;
+            left:5%;
+            color:#ffff;
+        }
+        .container1 span{
+            border-radius: 5%;
+            color: #0B388D;
+        }
+        .navbar1{
+            border: 22px #2691d9 solid;
+        }
+        .agent{
+            color: white;
+            position:absolute;
+            top:2%;
+            right:7%;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        .image4{
+            height:15%;
+            width:15%;
+            position:absolute;
+            top:10%;
+        }
+        .navbar-list{
+            position:absolute;
+            top:18%;
+            right:10%;
+            display: flex;
+        }
+        .home{
+            position:absolute;
+            right:1680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .manage{
+            position:absolute;
+            right:1300%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .service{
+            position:absolute;
+            right:1000%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .gallery{
+            position: absolute;
+            right:680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .about{
+            position: absolute;
+            right: 400%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .contact{
+            position:absolute;
+            right:40%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .navbar-list  a:hover{
+            color:#9FD542;
+            transition: all  0.5s;
+            cursor: pointer;
+        }
+        .h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size:30px ;
+            padding-top: 350px;
+        }
+        .h4{
+            font-size:15px ;
+            text-align: center;
+        }
+        .h5{
+            font-size:13px ;
+            padding-left: 270px;
+        }
+        .p1{
+            padding-top: 1px;
+            padding-left: 270px;
+        }
+       #mobile {
+        color:#0B388D;
+       }
+       #phone {
+        color: #0B388D;
+       }
+       #check {
+        color: #0B388D;
+       }
+        .p2{
+            position: absolute;
+            top:80%;
+            padding-left: 520px;
+        }
+        .p3{
+            position:absolute;
+            top:80%;
+            padding-left: 840px;
+        }
+        .h3{
+            padding-left: 267px;
+        }
+        span{
+            color:red;
+        }
+        .name{
+            position:absolute;
+            top:98%;
+            left:25%;
+            font-size:15px ;
+        }
+        .input1{
+            position: absolute;
+            top:96%;
+            left:30%;
+            width:20%;
+            height:5%;
+            outline: none;
+        }
+        .email{
+            position:absolute;
+            top:107%;
+            left:25%;
+            font-size:15px ;
+        }
+        #email {
+            color: white;
+        }
+        .fs{
+            max-width: 1000px;
+            padding-top: 30px;
+            padding-bottom: 450px;
+            padding-left: 0px;
+        }
+        .input2{
+            position:absolute;
+            top:105%;
+            left:30%;
+            width:20%;
+            height:5%;
+            outline: none;
+        }
+        .city{
+            position:absolute;
+            top:117%;
+            left:25%;
+            font-size:15px ;
+        }
+        .input3{
+            position:absolute;
+            top:116%;
+            left:30%;
+            width:20%;
+            height:5%;
+            outline: none;
+        }
+        .phone{
+            position:absolute;
+            top:97%;
+            right:40%;
+            font-size:15px ;
+        }
+        .input4{
+            position: absolute;
+            right:18%;
+            top:96%;
+            width:20%;
+            height:5%;
+            outline: none;
+        }
+        .org{
+            position:absolute;
+            top:107%;
+            right:40%;
+            font-size:15px ;
+        }
+        .input5{
+            position: absolute;
+            right:18%;
+            top:105%;
+            width:20%;
+            height:5%;
+            outline: none;
+        }
+        .state{
+            position:absolute;
+            top:117%;
+            right:40%;
+            font-size:15px ;
+        }
+        .input6{
+            position: absolute;
+            right:18%;
+            top:116%;
+            width:20%;
+            height:5%;
+            outline: none;
+        }
+        .com{
+            position:absolute;
+            top:127%;
+            left:25%;
+            font-size:15px ;
+        }
+        .input7{
+            position: absolute;
+            top:125%;
+            left:32%;
+            width:50%;
+            height:12%;
+            outline: none;
+        }
+        .ver{
+            position:absolute;
+            top:142%;
+            left:25%;
+            font-size:15px ;
+        }
+        .input8{
+            position:absolute;
+            top:145%;
+            left:31%;
+            height:5%;
+            width:51%;
+        }
+        .submit{
+            position:absolute;
+            position:absolute;
+            top:154%;
+            left:50%;
+            border:10px #0B388D solid;
+            text-decoration: none;
+            background-color: #0B388D;
+            color:#ffff;
+        }
+        .container {
+            max-width: 1270px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .footer {
+            background-color: #2691d9;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+            position:absolute;
+            right:0;
+            left:0;
+            top:185%;
+        }
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            width: 22%;
+            padding: 0 15px;
+            color: white;
+        }
+        .footer-col1 h4, .footer-col2 h4, .footer-col3 h4, .footer-col4 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        .footer-col2, .footer-col3, .footer-col4 {
+            line-height: 1.8;
+            color: white;
+            
+        }
+        .footer-col2 {
+            padding-left: 30px;
+        }
+        .footer-col2 ul li a{
+            text-decoration: none;
+        }
+        .footer-col3 ul li a{
+            text-decoration: none;
+        }
+        .footer-col4 ul li a{
+            text-decoration: none;
+        }
+        .footer-col2 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col3 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 .font-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: white;
+        }
+        .last {
+            padding-left: 450px;  
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="container1">
+            <p><i id="email" class="fa-solid fa-envelope"></i>venkateswara12@gmail.com </p>
+            <a class="agent" href="agent2.html">Agent Login</a>
+            <img class="image4" src="logo.jpeg"/>
+            <ul class="navbar-list">
+                <li><a class="home" href="hamebus.html">Home</a></li>
+                <li><a class="manage" href="book.html">Bookings</a></li>
+                <li><a class="service" href="servicebus.html">Service</a></li>
+                <li><a class="gallery" href="gallerybus.html">Gallery</a></li>
+                <li><a class="about" href="navbarbus.html">About</a></li>
+                <li><a class="contact" href="contaactbus.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="image"> 
+        <img src="balaji.jpg"/>
+        <!-- <h2>GALLERY</h2> -->
+    </div>
+    <div>
+    <h1 class="h1">register for an agent</h1>
+    <h4 class="h4">Kindly fill in the below details & submit, we shall get in touch with you soon.</h4>
+    <h5 class="h5"><u>REG</u>ISTRATION PROCESS</h5>
+    <p class="p1"><i  id="mobile" class="fa-solid fa-mobile-screen-button"></i> Send us your contact details.</p>
+    <p class="p2"><i  id="phone" class="fa-solid fa-phone"></i> We will contact you within 24 hours.</p>
+    <p class="p3"><i  id="check" class="fa-solid fa-check"></i> On completion, you will get login Id and password</p>
+    <h3 class="h3">AGENT REGISTRATION</h3>
+    <center>
+    <form>
+        <fieldset class="fs">
+        <label class="name">Name<span>*</span></label>
+            <input  class="input1" type="text" placeholder="Your Name"/>
+            <br>
+            <label class="email">Email<span>*</span></label>
+            <input  class="input2" type="text" placeholder="Your email"/>
+            <br>
+            <label class="city">City </label>
+            <input class="input3"/>
+            <br>
+            <label class="phone">Phone<span>*</span></label> 
+            <input class="input4" type="number"  maxlength="11" placeholder="Your Number" />
+            <br>
+            <label class="org">firm</label>
+            <input  class="input5" type="text" />
+            <br>
+            <label class="state">State</label>
+            <input  class="input6" type="text"/>
+            <label class="com">comment</label>
+            <textarea class="input7"></textarea>
+            <label class="ver">Verification <span style="color:black">10+19=?</span></label>  
+            <input class="input8" type="number" maxlength="40"/>
+            <a  class="submit" href="#">submit</a>
+        </fieldset>
+    </form>
+    </center>            
+            <h6 class="h6">Wish You a Happy And Comfortable Journey</h6>
+
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "row">
+                <div class = "footer-col1">
+                    <h4><font color = "black">CONTACT</font></h4>
+                    <h3><i class="fa-solid fa-location-dot"></i> :  SRI VENKATESWARA <br> TRAVELS</h3>
+                    <p>
+                        2-88, KORLAGUDEM, KALLURU,<br>
+                        KHAMMAM, Khammam,<br>
+                        Telangana-507209<br><br>
+                        <i class="fa-solid fa-phone"></i> : 8179574959<br>
+                        <i class="fa-solid fa-envelope"></i> : srivenkateswaratravels.spl@gmail.com
+                    </p>
+                </div>
+                <div class = "footer-col2">
+                    <h4><font color = "black">QUICK LINKS</font></h4>
+                    <ul>
+                        <li><a href = "shedule.html"><font color = "white">Shedules</font></a></li>
+                        <li><a href = "refund.html"><font color = "white">Refund Status</font></a></li>
+                        <li><a href = "agentregister.html"><font color = "white">Agent Registration</font></a></li>
+                        <li><a href = "policy.html"><font color = "white">Privacy Policy</font></a></li>
+                        <li><a href = "faqs.html"><font color = "white">FAQS</font></a></li>
+                        <li><a href = "feedback12.html"><font color = "white">Feedback</font></a></li>
+                    </ul>
+                </div>
+                <div class = "footer-col3">
+                <h4><font color  = "black">QUICK LINKS</font></h4>
+                    <ul>
+                        <li><a href = "t&c12.html"><font color = "white">Terms & Conditions</font></a></li>
+                        <li><a href = "cpb.html"><font color = "white">Confirm Phone Booking</font></a></li>
+                        <li><a href = "contaactbus.html"><font color = "white">Contact</font></a></li>
+                        <li><a href = "gallerybus.html"><font color = "white">Gallery</font></a></li>
+                        <li><a href = "navbarbus.html"><font color = "white">About Us</font></a></li>
+                        <li><a href = "agent2.html"><font color = "white">Agent Login</font></a></li>
+                    </ul>
+                    
+                </div>
+                <div class = "footer-col4">
+                    <h4><font color = "black">FOLLOW US</font></h4>
+                    <div class = "font-links">
+                        <a href = ""><font color = "white"><i class="fa-brands fa-facebook"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-twitter"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-youtube"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-linkedin"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-instagram"></i></font></a>
+                    </div>
+                    
+                </div>
+                <div class = "last">
+                    <center><h4>2023 All rights reserved.<font color ="red"> SRI VENKATESWARA TRAVELS</font></h4></center>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

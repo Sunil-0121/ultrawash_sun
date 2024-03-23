@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .image img{
+            height:25%;
+            width:100%;
+            position: absolute;
+            top:30%;
+            left:1px;
+        }
+        .image h2{
+            color:rgb(62,62,162);
+            font:30px Lato,sans-serif;
+            position:absolute;
+            top:40%;
+            left:40%;
+        }
+        .container1 p{
+            font:15px Lato,sans-serif;
+            position:absolute;
+            top:1%;
+            left:5%;
+            color:#ffff;
+        }
+        .container1 span{
+            border:6px #0B388D solid;
+            border-radius: 5%;
+            background-color: #0B388D;
+            color: #0B388D;
+        }
+        .navbar1{
+            border: 22px #2691d9 solid;
+        }
+        .agent{
+            position:absolute;
+            top:2%;
+            right:7%;
+            color:#ffff;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        .image4{
+            height:15%;
+            width:15%;
+            position:absolute;
+            top:10%;
+        }
+        .navbar-list{
+            position:absolute;
+            top:18%;
+            right:10%;
+            display: flex;
+        }
+        .home{
+            position:absolute;
+            right:1680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .manage{
+            position:absolute;
+            right:1300%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .service{
+            position:absolute;
+            right:1000%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .gallery{
+            position: absolute;
+            right:680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .about{
+            position: absolute;
+            right: 400%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .contact{
+            position:absolute;
+            right:40%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .navbar-list  a:hover{
+            color:#9FD542;
+            transition: all  0.5s;
+            cursor: pointer;
+        }
+        .h1{
+            position:absolute;
+            top:60%;
+            left:20%;
+        }
+        .intro{
+            position:absolute;
+            top:68%;
+            left:20%;
+        }
+        .p1{
+            position:absolute;
+            top:72%;
+            left:20%;
+        }
+        .intel{
+            position:absolute;
+            top:82%;
+            left:20%;
+        }
+        .p2{
+            position:absolute;
+            top:86%;
+            left:20%;
+        }
+        .res{
+            position:absolute;
+            top:97%;
+            left:20%;
+        }
+        .h2{
+            position:absolute;
+            top:101%;
+            left:20%;
+        }
+        .list{
+            position:absolute;
+            top:106%;
+            left:20%;
+        }
+        .no{
+            position:absolute;
+            top:133%;
+            left:20%;
+        }
+        .p3{
+            position:absolute;
+            top:136%;
+            left:20%;
+        }
+        .lim{
+            position:absolute;
+            top:141%;
+            left:20%;
+        }
+        .p4{
+            position:absolute;
+            top:144%;
+            left:20%;
+        }
+        .ind{
+            position:absolute;
+            top:154%;
+            left:20%;
+        }
+        .p5{
+            position:absolute;
+            top:157%;
+            left:20%;
+        }
+        .ser{
+            position:absolute;
+            top:165%;
+            left:20%;
+        }
+        .p6{
+            position:absolute;
+            top:168%;
+            left:20%;
+        }
+        .var{
+            position:absolute;
+            top:173%;
+            left:20%;
+        }
+        .p7{
+            position:absolute;
+            top:176%;
+            left:20%;
+        }
+        .ass{
+            position:absolute;
+            top:182%;
+            left:20%;
+        }
+        .p8{
+            position:absolute;
+            top:186%;
+            left:20%;
+        }
+        .ent{
+            position:absolute;
+            top:195%;
+            left:20%;
+        }
+        .p9{
+            position:absolute;
+            top:199%;
+            left:20%;
+        }
+        .can{
+            position:absolute;
+            top:204%;
+            left:20%;
+        }
+        .list2{
+            position:absolute;
+            top:208%;
+            list-style-type: none;
+            left:20%;
+        }
+        .h3{
+            font-size:34px;
+            position:absolute;
+            top:226%;
+            left:40%;
+            color:blue;
+            left:20%;
+        }
+        .container {
+            max-width: 1270px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .footer {
+            background-color: #2691d9;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+            position:absolute;
+            right:0;
+            left:0;
+            top:240%;
+        }
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            width: 22%;
+            padding: 0 15px;
+            color: white;
+        }
+        .footer-col1 h4, .footer-col2 h4, .footer-col3 h4, .footer-col4 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        .footer-col2, .footer-col3, .footer-col4 {
+            line-height: 1.8;
+            color: white;
+            
+        }
+        .footer-col2 {
+            padding-left: 30px;
+        }
+        .footer-col2 ul li a{
+            text-decoration: none;
+        }
+        .footer-col3 ul li a{
+            text-decoration: none;
+        }
+        .footer-col4 ul li a{
+            text-decoration: none;
+        }
+        .footer-col2 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col3 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 .font-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: white;
+        }
+        .last {
+            padding-left: 450px;
+            padding-top: 30px;
+        }
+        #email{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="container1">
+            <p><i id="email" class="fa-solid fa-envelope"></i>venkateswara12@gmail.com </p>
+            <a class="agent" href="agent2.html">Agent Login</a>
+            <img class="image4" src="logo.jpeg"/>
+            <ul class="navbar-list">
+                <li><a class="home" href="hamebus.html">Home</a></li>
+                <li><a class="manage" href="book.html">Bookings</a></li>
+                <li><a class="service" href="servicebus.html">Service</a></li>
+                <li><a class="gallery" href="gallerybus.html">Gallery</a></li>
+                <li><a class="about" href="navbarbus.html">About</a></li>
+                <li><a class="contact" href="contaactbus.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="image"> 
+        <img src="balaji.jpg"/>
+        <!-- <h2>GALLERY</h2> -->
+    </div>
+    <h1 class="h1">General Terms and Conditions:</h1>
+    <h4 class="intro">Introduction </h4>
+    <p class="p1">These website Standard Terms and Conditions written on this webpage shall manage your use of our website, accessible at www.srivenkateshtravels.com. These terms will be applied fully<br>affect your use of this website. By using this website, you agreed to accept all terms and conditions written in here. You must not use this website if you disagree with any of these website<br> standard terms and conditions.</p>
+    <h4 class="intel">Intellectual Property Rights</h4>
+    <p class="p2">Other than the content you own, under these terms, the operator and/or its licensors own all the intellectual property rights and materials contained in this website.<br><br>You are granted a limited license only for purposes of viewing the material contained on this website.</P>
+    <h4 class="res">Restrictions</h4>
+    <p class="h2">You are specifically restricted from all of the following: </p>
+    <ul class="list">
+        <li>Publishing any Website material in any other media selling, sublicensing and/or otherwise commercializing any Website material.</li>
+        <li>Publicly performing and/or showing any Website material using this website in any way that is or may be damaging to this website.</li>
+        <li>Using this website in any way that impacts user access to this website</li>
+        <li>If any provision of these terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein. Using this Website<br> contrary to applicable laws and regulations, or in any way may cause harm to the website, or to any person or business entity
+        </li>
+        <li>Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this website</li>
+        <li>Using this website to engage in any advertising or marketing certain areas of this website are restricted from being accessed  and the operator may further restrict access by you to any areas of this website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.</li>
+    </ul>
+    <h4 class="no">No Warranties</h4>
+    <p class="p3">This website is provided "as is," with all faults, and the operator expresses no representations or warranties, of any kind related to this website or the materials contained on this website.Also, nothing contained on this website shall be interpreted as advising you.</p>
+    <h4 class="lim">Limitation of Liability </h4>
+    <p class="p4">In no event shall the operator, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether<br> such liability is under contract. The operator, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this website.</p>
+    <h4 class="ind">Indemnification</h4>
+    <p class="p5">You hereby indemnify to the fullest extent the operator from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your<br> breach of any of the provisions of these Terms.</p>
+    <h4 class="ser">Severability</h4>
+    <p class="p6">If any provision of these terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein.</p>
+    <h4 class="var">Variation of Terms</h4>
+    <p class="p7">The operator is permitted to revise these terms at any time as it sees fit, and by using this website you are expected to review these terms on a regular basis.</p>
+    <h4 class="ass">Assignment</h4>
+    <p class="p8">The operator is allowed to assign, transfer, and subcontract its rights and/or obligations under these terms without any notification. However, you are not allowed to assign, transfer, or<br> subcontract any of your rights and/or obligations under these terms.</p>
+    <h4 class="ent">Entire Agreement</h4>
+    <p class="p9">These Terms constitute the entire agreement between the operator and you in relation to your use of this website and supersede all prior agreements and understandings.</p>
+    <h4 class="can">Cancellation Policy:</h4>
+    <ul class="list2">
+        <li>Less than 5 hours from the station departure time <b>100%</b> Cancellation Charges</li>
+        <li>Between 5 Hrs to 12 Hrs from the station departure time <b>40%</b> Cancellation Charges</li>
+        <li>Between 12 Hrs to 24 Hrs from the station departure time <b>30%</b> Cancellation Charges</li>
+        <li>Between 1 to 3 days before station departure time <b>10%</b> Cancellation Charges</li>
+        <li>Between 3 to 7 days before station departure time <b>10%</b> Cancellation Charges</li>
+        <li>Between 7 to 30 days before station departure time <b>10%</b> Cancellation Charges</li>
+    </ul>
+    <h2 class="h3">Wish you a Happy and Comfortable Journey</h2>
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "row">
+                <div class = "footer-col1">
+                    <h4><font color = "black">CONTACT</font></h4>
+                    <h3><i class="fa-solid fa-location-dot"></i> :  SRI VENKATESWARA <br> TRAVELS</h3>
+                    <p>
+                        2-88, KORLAGUDEM, KALLURU,<br>
+                        KHAMMAM, Khammam,<br>
+                        Telangana-507209<br><br>
+                        <i class="fa-solid fa-phone"></i> : 8179574959<br>
+                        <i class="fa-solid fa-envelope"></i> : srivenkateswaratravels.spl@gmail.com
+                    </p>
+                </div>
+                <div class = "footer-col2">
+                    <h4><font color = "black">QUICK LINKS</font></h4>
+                    <ul>
+                        <li><a href = "shedule.html"><font color = "white">Shedules</font></a></li>
+                        <li><a href = "refund.html"><font color = "white">Refund Status</font></a></li>
+                        <li><a href = "agentregister.html"><font color = "white">Agent Registration</font></a></li>
+                        <li><a href = "policy.html"><font color = "white">Privacy Policy</font></a></li>
+                        <li><a href = "faqs.html"><font color = "white">FAQS</font></a></li>
+                        <li><a href = "feedback12.html"><font color = "white">Feedback</font></a></li>
+                    </ul>
+                </div>
+                <div class = "footer-col3">
+                <h4><font color = "black">QUICK LINKS</font></h4>
+                    <ul>
+                        <li><a href = "t&c12.html"><font color = "white">Terms & Conditions</font></a></li>
+                        <li><a href = "cpb.html"><font color = "white">Confirm Phone Booking</font></a></li>
+                        <li><a href = "contaactbus.html"><font color = "white">Contact</font></a></li>
+                        <li><a href = "gallerybus.html"><font color = "white">Gallery</font></a></li>
+                        <li><a href = "navbarbus.html"><font color = "white">About Us</font></a></li>
+                        <li><a href = "agent2.html"><font color = "white">Agent Login</font></a></li>
+                    </ul>
+                    
+                </div>
+                <div class = "footer-col4">
+                    <h4><font color = "black">FOLLOW US</font></h4>
+                    <div class = "font-links">
+                        <a href = ""><font color = "white"><i class="fa-brands fa-facebook"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-twitter"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-youtube"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-linkedin"></i></font></a>
+                        <a href = ""><font color = "white"><i class="fa-brands fa-instagram"></i></font></a>
+                    </div>
+                    
+                </div>
+                <div class = "last">
+                    <center><h4>2023 All rights reserved.<font color ="red"> SRI VENKATESWARA TRAVELS</font></h4></center>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

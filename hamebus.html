@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .container1 p{
+            font:15px Lato,sans-serif;
+            position:absolute;
+            top:1%;
+            left:5%;
+            color:#ffff;
+        }
+        .container1 span{
+            border:6px #0B388D solid;
+            border-radius: 5%;
+            background-color: #0B388D;
+            color: #0B388D;
+        }
+        .navbar1{
+            border: 22px #2691d9 solid;
+        }
+        .agent{
+            color: white;
+            position:absolute;
+            top:2%;
+            right:7%;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        .image4{
+            height:15%;
+            width:15%;
+            position:absolute;
+            top:10%;
+        }
+        .navbar-list{
+            position:absolute;
+            top:18%;
+            right:10%;
+            display: flex;
+        }
+        .home{
+            position:absolute;
+            right:1680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .manage{
+            position:absolute;
+            right:1300%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .service{
+            position:absolute;
+            right:1000%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .gallery{
+            position: absolute;
+            right:680%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .about{
+            position: absolute;
+            right: 400%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .contact{
+            position:absolute;
+            right:40%;
+            bottom:100%;
+            text-decoration: none;
+            color:black;
+            font:18px Lato,sans-serif;
+        }
+        .navbar-list  a:hover{
+            color:#9FD542;
+            transition: all  0.5s;
+            cursor: pointer;
+        }
+        .img{
+            width: 100%;
+            height: 460px;
+            padding-top: 175px;
+        }
+        .select1, .select2, .select3, .select4, .select5 {
+            padding: 10px;
+            background-color: white;
+        }
+        .bar1 {
+            margin-top:0px;
+
+        }
+        .bar1 {
+            border: solid 1px black;
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            background-color: orange;
+            justify-content:center;
+            text-align: center;
+        }
+        .img2 {
+            width: 100%;
+            height: 450px;
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+        .am {
+            padding-top: 30px;
+        }
+        .main {
+            background-size: 100% 400px;
+            background-image: linear-gradient( to right, orange, green);
+            background-repeat: no-repeat;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 270px;
+            color: white;
+        }
+        .routes {
+            padding-left: 130px;
+            padding-top: 30px;
+        }
+        .menu {
+            background-color: white;
+        }
+        .head1 {
+            padding-top: 30px;
+        }
+        .wish {
+            color: blue;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .footer {
+            background-color: #2691d9 ;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            width: 22%;
+            padding: 0 15px;
+            color: white;
+        }
+        .footer-col1 h4, .footer-col2 h4, .footer-col3 h4, .footer-col4 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        .footer-col2, .footer-col3, .footer-col4 {
+            line-height: 1.8;
+            color: white;
+            
+        }
+        .footer-col2 {
+            padding-left: 30px;
+        }
+        .footer-col2 ul li a{
+            text-decoration: none;
+        }
+        .footer-col3 ul li a{
+            text-decoration: none;
+        }
+        .footer-col4 ul li a{
+            text-decoration: none;
+        }
+        .footer-col2 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col3 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 ul li a:hover{
+            color: #ffff;
+            padding-left: 8px;
+        }
+        .footer-col4 .font-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: white;
+        }
+        .last {
+            padding-left: 450px;
+            padding-top: 30px;
+        }
+        @media only screen and (max-width: 768px) {
+            .total {
+                width: 100%;
+            }
+            .contact {
+                right: 0%;
+                font-size: 16px;
+            }
+            .about {
+                right: 250%;
+                font-size: 16px;
+            }
+            .gallery {
+                right: 470%;
+                font-size: 16px;
+            }
+            .service {
+                right: 700%;
+                font-size: 16px;
+            }
+            .manage {
+                right: 950%;
+                font-size: 16px;
+            }
+            .home {
+                right: 1200%;
+                font-size: 16px;
+            }
+            .routes {
+                padding-left: 10px;
+            }
+            .last {
+                padding-left: 170px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="container1">
+            <p><i id="email" class="fa-solid fa-envelope"></i>venkateswara12@gmail.com </p>
+            <a class="agent" href="agent2.html">Agent Login</a>
+            <img class="image4" src="logo.jpeg"/>
+            <ul class="navbar-list">
+                <li><a class="home" href="hamebus.html">Home</a></li>
+                <li><a class="manage" href="book.html">Bookings</a></li>
+                <li><a class="service" href="servicebus.html">Service</a></li>
+                <li><a class="gallery" href="gallerybus.html">Gallery</a></li>
+                <li><a class="about" href="navbarbus.html">About</a></li>
+                <li><a class="contact" href="contaactbus.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img src = "balaji.jpg" class = "img">
+    <div class = "bar1">
+        <div class = "or">
+        <label><b>Origin</b> </label>
+        <select class = "select1">
+            <option value="0">Visakhapatnam</option>
+            <option value="1">Gajuwaka</option>
+            <option value="2">Vijayanagaram</option>
+            <option value="3">Srikakulam</option>
+            <option value="4">Rajahmundry</option>
+            <option value="5">Kakinada</option>
+            <option value="6">Bhimavaram</option>
+            <option value="7">Vijayawada</option>
+            <option value="8">Guntur</option>
+            <option value="9">Ongole</option>
+            <option value="10">Nellore</option>
+            <option value="11">Chittor</option>
+            <option value="12">Tirupati</option>
+            <option value="13">Kurnool</option>
+            <option value="14">Kadapa</option>
+            <option value="15">Ananthapuram</option>
+            <option value="16">Hydrabad</option>
+            <option value="17">Bangalore</option>
+            <option value="18">Chennai</option>
+        </select>
+        </div>
+        <br>
+        <div class = "dest">
+        <label><b>Destination</b> </label>
+        <select class = "select2">
+            <option value="0">Tirupathi</option>
+            <option value="1">Bhadrachalam</option>
+            <option value="2">Madurai</option>
+            <option value="3">Annavaram</option>
+            <option value="4">Srisailam</option>
+            <option value="5">Vijayawada</option>
+            <option value="6">Srikalahasthri</option>
+            <option value="7">Kanchipuram</option>
+            <option value="8">Mantralayam</option>
+            <option value="9">Ahobilam</option>
+            <option value="10">Yaganti</option>
+        </select>
+        </div>
+        <br>
+        <label class = "date"><b>Date</b> </label>
+        <input type = "date" class="select3"/>
+        <br>
+        <label class = "ret"><b>Return</b> </label>
+        <input type = "date" class="select4"/>
+        <br>
+        <button type = "search" class = "select5">Search</button>
+        <br>
+    </div>
+    <center class = "am">
+        <h1>AMENITIES</h1>
+    </center>
+    <img src = "C:\Users\Dell\OneDrive\Desktop\amenities-ravi.png" class = "img2" >
+    <div class = "main">
+    <div class = "h1">
+        <h1>Helpline</h1>
+    </div>
+    <div class = "h2">
+        <h2>Helpline For Bookings, Suggestions, Complaints & Boarding points</h2>
+    </div>
+    <div class = "h3">
+        <h2>Phone: Vijayawada:8179574958 , Hyderabad :8179574959</h2>
+    </div>
+    <div class = "h4">
+        <h2>E-mail :srivenkateswaratravels.spl@gmail.com</h2>
+    </div>
+    </div>
+    <div class = "menu">
+        <div class = "head1">
+            <center><h1>OUR POPULAR ROUTES</h1></center>
+        </div>
+    <div class = "routes">
+        <span><img src = "C:\Users\Dell\OneDrive\Desktop\th.jpeg" width="300px" height="250px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><img src = "C:\Users\Dell\OneDrive\Desktop\god2.png" width="300px" height="250px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><img src = "C:\Users\Dell\OneDrive\Desktop\god3.jpg" width="300px" height="250px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><img src = "C:\Users\Dell\OneDrive\Desktop\god4.jpg" width="300px" height="250px"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    </div>
+    <div class = "wish">
+        <center><h1>Wish you a Happy and Comfortable Journey</h1></center>
+        </div>
+        <br><br>
+        <footer class = "footer">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "footer-col1">
+                        <h4><font color = "black">CONTACT</font></h4>
+                        <h3><i class="fa-solid fa-location-dot"></i> :  SRI VENKATESWARA <br> TRAVELS</h3>
+                        <p>
+                            2-88, KORLAGUDEM, KALLURU,<br>
+                            KHAMMAM, Khammam,<br>
+                            Telangana-507209<br><br>
+                            <i class="fa-solid fa-phone"></i> : 8179574959<br>
+                            <i class="fa-solid fa-envelope"></i> : srivenkateswaratravels.spl@gmail.com
+                        </p>
+                    </div>
+                    <div class = "footer-col2">
+                        <h4><font color = "black">QUICK LINKS</font></h4>
+                        <ul>
+                            <li><a href = "shedule.html"><font color = "white">Shedules</font></a></li>
+                            <li><a href = "refund.html"><font color = "white">Refund Status</font></a></li>
+                            <li><a href = "agentregister.html"><font color = "white">Agent Registration</font></a></li>
+                            <li><a href = "policy.html"><font color = "white">Privacy Policy</font></a></li>
+                            <li><a href = "faqs.html"><font color = "white">FAQS</font></a></li>
+                            <li><a href = "feedback12.html"><font color = "white">Feedback</font></a></li>
+                        </ul>
+                    </div>
+                    <div class = "footer-col3">
+                    <h4><font color = "black">QUICK LINKS</font></h4>
+                        <ul>
+                            <li><a href = "t&c12.html"><font color = "white">Terms & Conditions</font></a></li>
+                            <li><a href = "cpb.html"><font color = "white">Confirm Phone Booking</font></a></li>
+                            <li><a href = "contaactbus.html"><font color = "white">Contact</font></a></li>
+                            <li><a href = "gallerybus.html"><font color = "white">Gallery</font></a></li>
+                            <li><a href = "navbarbus.html"><font color = "white">About Us</font></a></li>
+                            <li><a href = "agent2.html"><font color = "white">Agent Login</font></a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class = "footer-col4">
+                        <h4><font color = "black">FOLLOW US</font></h4>
+                        <div class = "font-links">
+                            <a href = ""><font color = "white"><i class="fa-brands fa-facebook"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-twitter"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-youtube"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-linkedin"></i></font></a>
+                            <a href = ""><font color = "white"><i class="fa-brands fa-instagram"></i></font></a>
+                        </div>
+                        
+                    </div>
+                    <div class = "last">
+                        <center><h4>2023 All rights reserved.<font color ="red"> SRI VENKATESWARA TRAVELS</font></h4></center>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
